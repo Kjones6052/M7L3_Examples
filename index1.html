@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete Form Example</title>
+</head>
+<body>
+    <h1>HTML Form Tag and Its Attributes</h1>
+    <form action="submit" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="subscribe">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea> 
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>New Input Types in HTML5</h2>
+    <form>
+        <label for="user-email">Email</label>
+        <input type="email" name="user-email" id="user-email" placeholder="Enter your email" required>
+
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" step="1">
+
+        <label for="birthdate">Birthdate</label>
+        <input type="date" name="birthdate" id="birthdate">
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>The Versatile type Attribute</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" step="1">
+
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+
+        <label>Preferred Contact Method:</label>
+        <input type="radio" id="email" name="email" value="email">
+        <label for="email">Email</label>
+        <input type="radio" id="phone" name="phone" value="phone">
+        <label for="phone">Phone</label>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your thoughts"></textarea> 
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

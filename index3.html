@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitlife User Registration</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+
+    <form action="/registration" method="post">
+        <fieldset>
+            <legend>Basic Information</legend>
+
+            <label for="full-name">Full Name</label>
+            <input type="text" name="full-name" id="full-name" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+
+            <label for="date of birth">Date of Birth</label>
+            <input type="date" name="date of birth" id="date of birth" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input type="radio" name="male" id="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" name="female" id="female" required>
+            <label for="female">Female</label>
+            
+            <input type="radio" name="other" id="other" required>
+            <label for="other">Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone">
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests</legend>
+
+            <input type="checkbox" name="interests" id="running" value="running">
+            <label for="running">Running</label>
+
+            <input type="checkbox" name="interests" id="yoga" value="yoga">
+            <label for="yoga">Yoga</label>
+
+            <input type="checkbox" name="interests" id="weightlifting" value="weightlifting">
+            <label for="weightlifting">Weightlifting</label>
+
+            <input type="checkbox" name="interests" id="swimming" value="swimming">
+            <label for="swimming">Swimming</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fitness Goals</legend>
+
+            <label for="fitness-goal">Choose your primary fitness goal:</label>
+            <select name="fitness-goal" id="fitness-goal">
+                <option value="lose-weight">Lose Weight</option>
+                <option value="build-muscle">Build Muscle</option>
+                <option value="improve-endurance">Improve Endurance</option>
+                <option value="maintain-health">Maintain Health</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+
+            <input type="checkbox" name="agree terms" id="agree terms" required>
+            <label for="agree terms">I agree to the <a href="/terms" target="_blank">Terms and Conditions</a></label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
